@@ -1,18 +1,13 @@
 <template>
 	<div>
-		<h3 class="font-weight-light">Contatos</h3>
-		<button class="btn btn-secondary mt-4 mb-4" @click="voltar">Voltar</button>
+		<ContatosLista></ContatosLista>
 	</div>
 </template>
 
 <script>
+import ContatosLista from "./../../components/contatos/ContatosLista";
+
 export default {
-	methods: {
-		voltar() {
-			// this.$router.push({ path: "/" });
-			//	this.$router.replace({ path: "/" });
-			this.$router.back();
-		}
-	}
+	components: { ContatosLista }
 };
 </script>

@@ -9,7 +9,6 @@
 			<router-link to="/" class="btn btn-info mb-4 mr-2">Home</router-link>
 			<router-link :to="{ path:'/contatos'}" class="btn btn-info mb-4 mr-2">Contatos</router-link>
 
-			<!-- <h3 class="font-weight-light">Contatos</h3> -->
 			<router-view></router-view>
 		</div>
 	</div>

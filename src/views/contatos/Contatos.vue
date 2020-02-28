@@ -1,6 +1,7 @@
 <template>
 	<div>
 		<ContatosLista></ContatosLista>
+
 		<router-view></router-view>
 	</div>
 </template>

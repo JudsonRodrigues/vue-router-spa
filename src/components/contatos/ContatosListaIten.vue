@@ -1,6 +1,10 @@
 <template>
 	<li>
-		<router-link class="btn btn-info btn-sm float-right" :to="`/contatos/${contato.id}`">Detalhes</router-link>
+		<!-- :to="`/contatos/${contato.id}`" -->
+		<router-link
+			class="btn btn-info btn-sm float-right"
+			:to="{name:'contato', params: {id:contato.id}}"
+		>Detalhes</router-link>
 		<span>{{contato.nome}}</span>
 	</li>
 </template>

@@ -16,7 +16,7 @@ export default new VueRouter({
             path: '/contatos',
             component: Contatos,
             children: [
-                { path: ':id', component: ContatoDetalhes }, // http://localhost:8080/contatos/1
+                { path: ':id', component: ContatoDetalhes, name: 'contato' }, // http://localhost:8080/contatos/1
                 { path: '', component: ContatosHome }
             ]
 
